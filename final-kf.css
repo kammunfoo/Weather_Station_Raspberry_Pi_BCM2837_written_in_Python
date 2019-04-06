@@ -1,0 +1,91 @@
+body {
+    background-color: skyblue;
+}
+
+h1 {
+    color: red;
+}
+
+h2 {
+    color: green;
+}
+
+p {
+    color: blue;
+}
+
+p#yourweather {
+	color: #F88A23;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 50px;
+	width: 1000px;
+   	height: 10px;
+	transition-property: width;
+	transition-property: height;
+	transition-duration: 2s;
+}
+
+p#yourweather:hover {
+	color: #FAD328;
+	width: 400px;
+	height: 130px;
+}
+
+table, td {
+	font-family: arial, sans-serif;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+td {
+	text-align: left;
+}
+
+table#datatabletemperature {
+    background-color: #f1f1c1;
+}
+
+td#totalsamplesoftemperature {
+	font-weight: bold;
+	text-align: center;
+}
+
+td#minimumtemperature {
+	font-weight: bold;
+	text-align: center;
+}
+
+td#averagetemperature {
+	font-weight: bold;
+	text-align: center;
+}
+
+td#maximumtemperature {
+	font-weight: bold;
+	text-align: center;
+}
+
+table#datatablepressure {
+    background-color: #ffcc00;
+}
+
+td#totalsamplesofpressure {
+	font-weight: bold;
+	text-align: center;
+}
+
+td#minimumpressure {
+	font-weight: bold;
+	text-align: center;
+}
+
+td#averagepressure {
+	font-weight: bold;
+	text-align: center;
+}
+
+td#maximumpressure {
+	font-weight: bold;
+	text-align: center;
+}

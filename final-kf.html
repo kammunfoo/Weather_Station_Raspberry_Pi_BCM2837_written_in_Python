@@ -1,0 +1,71 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="/static/final-kf.css">
+	<script src="/static/final-kf.js"></script>
+
+	<title>{{ title }}</title>
+</head>
+
+<body>
+	<input type="button" onclick="popup()" value="Click Me!">
+	<h1>Weather Station Dashboard</h1>
+	<h2>This is a webpage that displays Temperature and Pressure Statistics.</h2>
+	<p>Current Date and Time Stamp: {{ time }}.</p>
+
+	<table id="datatabletemperature">
+		<tr>
+			<td>Total Samples of Temperature</td>
+			<td id="totalsamplesoftemperature" onmouseover="highlight('totalsamplesoftemperature')" onmouseout="reset('totalsamplesoftemperature')">{{ count }}</td>
+			<td>Datetime of Samples Taken</td>
+		</tr>
+
+		<tr>
+			<td>Minimum Temperature (degC)</td>
+			<td id="minimumtemperature" onmouseover="highlight('minimumtemperature')" onmouseout="reset('minimumtemperature')">{{ min_temp }}</td>
+			<td id="minimumtemperature" onmouseover="highlight('minimumtemperature')" onmouseout="reset('minimumtemperature')">{{ min_temp_dt }}</td>
+		</tr>
+
+		<tr>
+			<td>Average Temperature (degC)</td>
+			<td id="averagetemperature" onmouseover="highlight('averagetemperature')" onmouseout="reset('averagetemperature')">{{ avg_temp }}</td>
+			<td id="averagetemperature" onmouseover="highlight('averagetemperature')" onmouseout="reset('averagetemperature')">N/A</td>
+		</tr>
+
+		<tr>
+			<td>Maximum Temperature (degC)</td>
+			<td id="maximumtemperature"  onmouseover="highlight('maximumtemperature')"  onmouseout="reset('maximumtemperature')">{{ max_temp }}</td>
+			<td id="maximumtemperature"  onmouseover="highlight('maximumtemperature')"  onmouseout="reset('maximumtemperature')">{{ max_temp_dt }}</td>
+		</tr>
+
+	</table>
+	
+	<br>
+	<table id="datatablepressure">
+		<tr>
+			<td>Total Samples of Pressure</td>
+			<td id="totalsamplesofpressure" onmouseover="highlight('totalsamplesofpressure')" onmouseout="reset('totalsamplesofpressure')">{{ count }}</td>
+			<td>Datetime of Samples Taken</td>
+		</tr>
+
+		<tr>
+			<td>Minimum Pressure (mbar)</td>
+			<td id="minimumpressure" onmouseover="highlight('minimumpressure')" onmouseout="reset('minimumpressure')">{{ min_press }}</td>
+			<td id="minimumpressure" onmouseover="highlight('minimumpressure')" onmouseout="reset('minimumpressure')">{{ min_press_dt }}</td>
+		</tr>
+
+		<tr>
+			<td>Average Pressure (mbar)</td>
+			<td id="averagepressure" onmouseover="highlight('averagepressure')" onmouseout="reset('averagepressure')">{{ avg_press }}</td>
+			<td id="averagepressure" onmouseover="highlight('averagepressure')" onmouseout="reset('averagepressure')">N/A</td>
+		</tr>
+
+		<tr>
+			<td>Maximum Pressure (mbar)</td>
+			<td id="maximumpressure"  onmouseover="highlight('maximumpressure')"  onmouseout="reset('maximumpressure')">{{ max_press }}</td>
+			<td id="maximumpressure"  onmouseover="highlight('maximumpressure')"  onmouseout="reset('maximumpressure')">{{ max_press_dt }}</td>
+		</tr>
+
+	</table>
+
+</body>
+</html>
